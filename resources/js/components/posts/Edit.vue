@@ -4,7 +4,6 @@
             <div class="col-md-12">
                 <div class="card card-default">
                     <div class="card-header"><strong>EDIT POST</strong></div>
-
                     <div class="card-body">
 
                         <form @submit.prevent="PostUpdate">
@@ -38,7 +37,6 @@
                             </div>
 
                         </form>
-
                     </div>
                 </div>
             </div>

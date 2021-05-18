@@ -6,9 +6,7 @@
                     <div class="card-header"><strong>ADD POST</strong></div>
 
                     <div class="card-body">
-
                         <form @submit.prevent="PostStore">
-
                             <div class="form-group">
                                 <label>TITLE:</label>
                                 <input type="text" class="form-control" v-model="post.title"
@@ -30,15 +28,12 @@
                                     </div>
                                 </div>
                             </div>
-
                             <div class="form-group">
                                 <button type="submit" class="btn btn-md btn-primary">ADD</button>
                                 <button type="reset" class="btn btn-md btn-danger">RESET</button>
                                 <router-link :to="{name: 'posts' }" class="btn btn-md btn-secondary">BACK</router-link>
                             </div>
-
                         </form>
-
                     </div>
                 </div>
             </div>
