@@ -20,7 +20,6 @@
                                 </div>
                             </div>
 
-
                             <div class="form-group">
                                 <label>CONTENT:</label>
                                 <textarea class="form-control" v-model="post.content" rows="5"
@@ -32,16 +31,13 @@
                                 </div>
                             </div>
 
-
                             <div class="form-group">
                                 <button type="submit" class="btn btn-md btn-primary">ADD</button>
                                 <button type="reset" class="btn btn-md btn-danger">RESET</button>
                                 <router-link :to="{name: 'posts' }" class="btn btn-md btn-secondary">BACK</router-link>
                             </div>
 
-
                         </form>
-
 
                     </div>
                 </div>
