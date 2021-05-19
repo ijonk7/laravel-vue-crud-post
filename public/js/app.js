@@ -1919,7 +1919,7 @@ __webpack_require__.r(__webpack_exports__);
     PostStore: function PostStore() {
       var _this = this;
 
-      var uri = 'https://laravel-vue-2.test/api/posts/store';
+      var uri = '/api/posts/store';
       this.axios.post(uri, this.post).then(function (response) {
         _this.$router.push({
           name: 'posts'
@@ -2000,7 +2000,7 @@ __webpack_require__.r(__webpack_exports__);
   created: function created() {
     var _this = this;
 
-    var uri = "https://laravel-vue-2.test/api/posts/".concat(this.$route.params.id);
+    var uri = "/api/posts/".concat(this.$route.params.id);
     this.axios.get(uri).then(function (response) {
       _this.post = response.data.data;
     });
@@ -2009,7 +2009,7 @@ __webpack_require__.r(__webpack_exports__);
     PostUpdate: function PostUpdate() {
       var _this2 = this;
 
-      var uri = "https://laravel-vue-2.test/api/posts/update/".concat(this.$route.params.id);
+      var uri = "/api/posts/update/".concat(this.$route.params.id);
       this.axios.post(uri, this.post).then(function (response) {
         _this2.$router.push({
           name: 'posts'
@@ -2083,7 +2083,7 @@ __webpack_require__.r(__webpack_exports__);
   created: function created() {
     var _this = this;
 
-    var uri = "https://laravel-vue-2.test/api/posts";
+    var uri = "/api/posts";
     this.axios.get(uri).then(function (response) {
       _this.posts = response.data.data;
     });
@@ -2092,7 +2092,7 @@ __webpack_require__.r(__webpack_exports__);
     PostDelete: function PostDelete(id, index) {
       var _this2 = this;
 
-      this.axios["delete"]("https://laravel-vue-2.test/api/posts/".concat(id)).then(function (response) {
+      this.axios["delete"]("/api/posts/".concat(id)).then(function (response) {
         _this2.posts.splice(index, 1);
       })["catch"](function (error) {
         alert('system error!');

@@ -53,14 +53,14 @@
             }
         },
         created() {
-            let uri = `https://laravel-vue-2.test/api/posts/${this.$route.params.id}`;
+            let uri = `/api/posts/${this.$route.params.id}`;
             this.axios.get(uri).then((response) => {
                 this.post = response.data.data;
             });
         },
         methods: {
             PostUpdate() {
-                let uri = `https://laravel-vue-2.test/api/posts/update/${this.$route.params.id}`;
+                let uri = `/api/posts/update/${this.$route.params.id}`;
                 this.axios.post(uri, this.post)
                     .then((response) => {
                         this.$router.push({name: 'posts'});

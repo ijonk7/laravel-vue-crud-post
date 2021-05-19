@@ -52,7 +52,7 @@
         },
         methods: {
             PostStore() {
-                let uri = 'https://laravel-vue-2.test/api/posts/store';
+                let uri = '/api/posts/store';
                 this.axios.post(uri, this.post)
                     .then((response) => {
                         this.$router.push({

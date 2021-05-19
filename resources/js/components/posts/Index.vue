@@ -46,7 +46,7 @@
             }
         },
         created() {
-            let uri = `https://laravel-vue-2.test/api/posts`;
+            let uri = `/api/posts`;
             this.axios.get(uri).then(response => {
                 this.posts = response.data.data;
             });
@@ -54,7 +54,7 @@
         methods: {
             PostDelete(id, index)
             {
-                this.axios.delete(`https://laravel-vue-2.test/api/posts/${id}`)
+                this.axios.delete(`/api/posts/${id}`)
                     .then(response => {
                         this.posts.splice(index, 1);
                     }).catch(error => {
