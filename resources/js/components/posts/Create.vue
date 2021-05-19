@@ -19,7 +19,7 @@
                             </div>
 
                             <div class="form-group">
-                                <label>CONTEN:</label>
+                                <label>CONTENT:</label>
                                 <textarea class="form-control" v-model="post.content" rows="5"
                                           placeholder="Insert Content"></textarea>
                                 <div v-if="validation.content">
