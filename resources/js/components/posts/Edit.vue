@@ -9,7 +9,7 @@
                         <form @submit.prevent="PostUpdate">
 
                             <div class="form-group">
-                                <label>TITLE:</label>
+                                <label>TITL:</label>
                                 <input type="text" class="form-control" v-model="post.title"
                                        placeholder="Masukkan Title">
                                 <div v-if="validation.title">

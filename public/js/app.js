@@ -20011,7 +20011,7 @@ var render = function() {
                 ]),
                 _vm._v(" "),
                 _c("div", { staticClass: "form-group" }, [
-                  _c("label", [_vm._v("CONTENT:")]),
+                  _c("label", [_vm._v("CONTEN:")]),
                   _vm._v(" "),
                   _c("textarea", {
                     directives: [
@@ -20147,7 +20147,7 @@ var render = function() {
               },
               [
                 _c("div", { staticClass: "form-group" }, [
-                  _c("label", [_vm._v("TITLE:")]),
+                  _c("label", [_vm._v("TITL:")]),
                   _vm._v(" "),
                   _c("input", {
                     directives: [
