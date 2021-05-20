@@ -3,7 +3,7 @@
         <div class="row justify-content-center">
             <div class="col-md-12">
                 <div class="card card-default">
-                    <div class="card-header"><strong>EDIT POST</strong></div>
+                    <div class="card-header"><strong>EDITT POST</strong></div>
                     <div class="card-body">
 
                         <form @submit.prevent="PostUpdate">
